@@ -18,7 +18,7 @@ const main=()=>{
             return `
             <div class='box'>
             <div class='img-box'>
-                <image-product class='image' src=${el.images[1]}}></image-product>
+                <image-product class='image' src=${el.images[1]}></image-product>
             </div>
             <div class='bottom'>
                 <p>${el.title}<p>
