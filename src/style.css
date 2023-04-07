@@ -228,3 +228,16 @@ button:hover{
     display: none;
 }
 
+
+
+/* imgae custom */
+image-product product img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.product.bottom p {
+    height: 2em;
+    size: 2em;
+}

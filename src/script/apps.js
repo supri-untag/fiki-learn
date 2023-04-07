@@ -5,7 +5,7 @@ const main=()=>{
     
     const loadData = async () => {
         try {
-            const url = await fetch('https://api.escuelajs.co/api/v1/products');
+            const url = await fetch('https://fakestoreapi.com/products');
             productData = await url.json();
             loadproduct(productData);
         } catch (err) {
@@ -18,11 +18,12 @@ const main=()=>{
             return `
             <div class='box'>
             <div class='img-box'>
-                <image-product class='image' src=${el.images[1]}></image-product>
+                <image-product class='image'src=${el.image}>
+                </image-product>
             </div>
-            <div class='bottom'>
+            <div class='product bottom'>
                 <p>${el.title}<p>
-                <h2>${el.price}.000</h2>
+                <h3> $ ${el.price}</h3>
                 <button><i class="cart fa-solid fa-cart-shopping"></i>Tambah Keranjang</button>
             </div>
         </div>
